@@ -59,7 +59,7 @@ body{
 .nav-menu{
   display: flex;
   align-items: center;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-md);
 }
 
 .nav-menu a {
@@ -90,20 +90,24 @@ body{
 
 .box-hero-img{
   width: 60%;
-  min-height: 250px;
-  background-color: #C7978D;
-  border-right: 3px solid #C7978D;
+  background-color: #C7978D; 
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.box-hero-img img{
+  width: 100%;
+  display: block;
 }
 
 .hero-content{
   width: 40%;
-  min-height: 250px;
+ 
   /*ลบ: background-color: aqua; */
   /*เพิ่ม display, flex-direction, justify-content*/
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 24px;
+  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
 .hero-content h1{
@@ -130,26 +134,21 @@ body{
 
 .featured-column{
   width: 60%;
-  background-color: aqua;
-  border: 1px solid pink;
-  border-radius: 6px;
-  padding: var(--spacing-xl);
+  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
 .column-box-img{
-  margin-bottom: var(--spacing-lg);
-  border-radius: 4px;
+  margin-bottom: var(--spacing-xl);
   overflow: hidden;
 }
 
-.column-box-img{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.column-box-img img{
+  width:100%;
+  display:block;
 }
 
 .column-content{
-  padding: var(--spacing-sm);
+  padding: 0 var(--spacing-lg);
 }
 
 .column-content h2{
@@ -306,18 +305,17 @@ body{
 .thesis-left video{
   width: 100%;
   border-radius: 6px;
+ padding: var(--spacing-md) var(--spacing-lg);
 }
 
-.thesis-left h3{
-  margin-top: var(--spacing-md);
-}
 
 .thesis-left h3{
-  margin-top: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  margin-bottom: 8px;
 }
 
 .thesis-left p{
-  columns: orange;
+  color: orange;
   line-height: 1.6;
 }
 
@@ -330,18 +328,46 @@ body{
 
 .thesis-card{
   display: flex;
-  gap: var(--spacing-sm);
+  background-color: #FF9967;
+  border: 1px solid blue;
+  padding: 16px;
   align-items: center;
+}
+
+.thesis-box-img{
+  width: 35%;
+  flex-shrink: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: var(--spacing-md);
+}
+
+.thesis-box-img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .thesis-card content{
   align-items: center;
 }
 
+.thesis-card content h4{
+  font-size: 1rem;
+  margin: 0 0 8px 0;
+}
+
+.thesis-card content p{
+  font-size: 0.9rem;
+  color: #459eda;
+  margin: 0;
+}
+
 .footer{
   margin-top: var(--spacing-xl);
   border-top: 1px solid black;
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg); 
   display: flex;
   justify-content: space-between;
   align-items: center;
