@@ -214,6 +214,11 @@ body{
   margin: 0 0 4px 0;
 }
 
+.even-content a {
+    text-decoration: none; /* เอาเส้นใต้ออก */
+    color: #459eda; /* เปลี่ยนสีตัวอักษรตามต้องการ*/
+}
+
 .even-content p{
   font-size: 1rem;
   color: #ffabbc;
@@ -326,6 +331,7 @@ body{
 .thesis-card{
   display: flex;
   gap: var(--spacing-sm);
+  align-items: center;
 }
 
 .thesis-card content{
