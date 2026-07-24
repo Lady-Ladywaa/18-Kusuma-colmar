@@ -1,7 +1,7 @@
 :root {
     --primary-color:blue;
     --text-dark: black;
-    --bg-light: white;
+    --bg-light: rgb(252, 246, 246);
     --spacing-sm: 8px;
     --spacing-md: 16px;
     --spacing-lg: 24px
@@ -12,4 +12,68 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body{
+  font-family: 'segoe UI', Tahoma, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(143, 202, 212);
+  color:black;
+  line-height: 1.6;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 var(--spacing-lg);
+  background-color: white;
+  border-bottom: 2px solid #333333;
+  margin-bottom: var(--spacing-md);
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img{
+  height: 35px;
+  width: auto;
+}
+
+.logo-text{
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  color: black;
+}
+
+.logo-dark{
+  color: blueviolet;
+  font-weight: normal;
+  margin-left: 3px;
+}
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: pink;
+  font-size:1rem;
+  transition: color 0.2 ease;
+}
+
+.nav-menu a:hover{
+  color: var(--primary-color)
+}
+
+.nav-signin{
+  font-weight: 600;
+  color: var(--primary-color) !important;
 }
