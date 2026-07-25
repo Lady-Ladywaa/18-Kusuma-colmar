@@ -1,7 +1,7 @@
 :root {
-    --primary-color:#FFB485;
+    --primary-color:#000000;
     --text-dark: black;
-    --bg-light: #ffabbc(252, 246, 246);
+    --bg-light: #f0f0f0(252, 246, 246);
     --spacing-sm: 8px;
     --spacing-md: 16px;
     --spacing-lg: 24px;
@@ -16,7 +16,7 @@
 
 body{
   font-family: 'segoe UI', Tahoma, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #FF9967(143, 202, 212);
+  background-color: #ffffff(143, 202, 212);
   color:black;
   line-height: 1.6;
 }
@@ -47,11 +47,11 @@ body{
   font-weight: bold;
   font-size: 1.1rem;
   letter-spacing: 0.5px;
-  color: #DDB4A5;
+  color: #020202;
 }
 
 .logo-dark{
-  color: blueviolet;
+  color: rgb(177, 169, 184);
   font-weight: normal;
   margin-left: 3px;
 }
@@ -64,7 +64,7 @@ body{
 
 .nav-menu a {
   text-decoration: none;
-  color: pink;
+  color: rgb(5, 5, 5);
   font-size:1rem;
   transition: color 0.2 ease;
 }
@@ -81,8 +81,8 @@ body{
 /*hero-section*/
 .hero-section{
   display: flex;
-  background-color: #C7978D;
-  border: 3px solid #ffabbc;
+  background-color: #f1eced;
+  border: 3px solid #f1eced;
   border-radius: 6px;
   margin-bottom: var(--spacing-md);
   overflow: hidden;
@@ -90,7 +90,7 @@ body{
 
 .box-hero-img{
   width: 60%;
-  background-color: #C7978D; 
+  background-color: #f1eced; 
   padding: var(--spacing-xl) var(--spacing-lg);
 }
 
@@ -120,11 +120,16 @@ body{
   margin-top: 8px;
   margin-bottom: 8px;
   align-self: flex-start;
-  background-color: aquamarine;
-  color: #FF9967;
+  background-color: rgb(45, 49, 48);
+  color: #ddd7d5;
   padding: 8px 16px;
   border: none;
   cursor: pointer;
+}
+
+.btn-start:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 08)
 }
 
 .main-container{
@@ -139,6 +144,7 @@ body{
 
 .column-box-img{
   margin-bottom: var(--spacing-xl);
+  border-radius: 4px;
   overflow: hidden;
 }
 
@@ -152,7 +158,7 @@ body{
 }
 
 .column-content h2{
-  font-size: 1rem;
+  font-size: 2rem;
   margin-top: 0;
   margin-bottom: var(--spacing-md);
 }
@@ -165,7 +171,7 @@ body{
 
 .column-content .author{
   font-size: 1rem;
-  color: aquamarine;
+  color: rgb(5, 5, 5);
   margin: 0;
 }
 
@@ -178,16 +184,16 @@ body{
 
 .even-card{
   display: flex;
-  background-color: #C7978D;
-  border: 1px solid red;
-  padding: 12px;
+  background-color: #f1f0ef;
+  border: 1px solid rgb(207, 199, 199);
+  padding: var(--spacing-md);
   align-items: center;
-  transition: background-color 0.2 ease;
+  transition: background-color .2 ease;
 }
 
 .even-card-active{
-  background-color: #333333;
-  border-color: #C7978D;
+  background-color: #acacac;
+  border-color: #746a68;
 }
 
 .even-box-img{
@@ -200,7 +206,8 @@ body{
 
 .even-box-img img{
   width: 100%;
-  height: 80%;
+  height: auto;
+  display: block;
   object-fit: cover;
 }
 
@@ -209,18 +216,18 @@ body{
 }
 
 .even-content h3{
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin: 0 0 4px 0;
 }
 
 .even-content a {
     text-decoration: none; /* เอาเส้นใต้ออก */
-    color: #459eda; /* เปลี่ยนสีตัวอักษรตามต้องการ*/
+    color: #030303; /* เปลี่ยนสีตัวอักษรตามต้องการ*/
 }
 
 .even-content p{
   font-size: 1rem;
-  color: #ffabbc;
+  color: #000000;
   margin: 0 0 8px 0;
 }
 
@@ -252,7 +259,7 @@ body{
 }
 
 .course-card{
-  background: #FF9967;
+  background: #d3cac5;
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid black;
@@ -279,7 +286,7 @@ body{
 }
 
 .course-tag{
-  color: #C7978D;
+  color: #0e0d0d;
   font-size: 0.9rem;
   margin: 10px 0;
 }
@@ -299,7 +306,7 @@ body{
 }
 
 .thesis-left{
-  width: 60;
+  width: 60%;
 }
 
 .thesis-left video{
@@ -315,7 +322,7 @@ body{
 }
 
 .thesis-left p{
-  color: orange;
+  color: rgb(10, 10, 10);
   line-height: 1.6;
 }
 
@@ -328,8 +335,8 @@ body{
 
 .thesis-card{
   display: flex;
-  background-color: #FF9967;
-  border: 1px solid blue;
+  background-color: #d6cfcc;
+  border: 1px solid rgb(168, 168, 170);
   padding: 16px;
   align-items: center;
 }
@@ -349,18 +356,18 @@ body{
   display: block;
 }
 
-.thesis-card content{
+.thesis-card-content{
   align-items: center;
 }
 
-.thesis-card content h4{
+.thesis-card-content h4{
   font-size: 1rem;
   margin: 0 0 8px 0;
 }
 
-.thesis-card content p{
+.thesis-card-content p{
   font-size: 0.9rem;
-  color: #459eda;
+  color: #0c0c0c;
   margin: 0;
 }
 
@@ -384,10 +391,10 @@ body{
 }
 
 .footer link a{
-  color: #DDB4A5;
+  color: #080808;
   text-decoration: none;
 }
 
 .footer-links a:hover{
-  color: #ffabbc;
+  color: #080808;
 }
